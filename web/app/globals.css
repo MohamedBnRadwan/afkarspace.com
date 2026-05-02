@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 250 248 244;
+  --foreground: 15 23 42;
+  --muted: 87 96 110;
+  --line: 219 223 230;
+  --accent: 193 154 107;
+  --accent-soft: 245 234 219;
+}
+
+.dark {
+  --surface: 8 12 20;
+  --foreground: 242 244 248;
+  --muted: 155 163 176;
+  --line: 44 55 72;
+  --accent: 224 188 141;
+  --accent-soft: 54 44 34;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body-latin), var(--font-body-arabic), sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(193, 154, 107, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+    rgb(var(--surface));
+  color: rgb(var(--foreground));
+  font-feature-settings: "ss01" 1, "ss02" 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-shell {
+  @apply mx-auto max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.section-gap {
+  @apply py-20 sm:py-24 lg:py-32;
+}
+
+.glass-panel {
+  @apply border border-line/70 bg-white/60 shadow-premium backdrop-blur-xl dark:bg-slate-950/45;
+}
+
+.eyebrow {
+  @apply inline-flex items-center gap-2 rounded-full border border-line/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-muted dark:bg-slate-950/50;
+}
+
+.font-display {
+  font-family: var(--font-display-latin), var(--font-display-arabic), serif;
+}

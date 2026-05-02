@@ -1,0 +1,15 @@
+{
+  "brand": {
+    "name": "Afkar",
+    "logoIcon": "/logos/logo-icon.png",
+    "darkLogoIcon": "/logos/logo-dark.png"
+  },
+  "contact": {
+    "phone": "01060606649",
+    "whatsappDisplay": "01060606649",
+    "whatsappUrl": "https://wa.me/201060606649",
+    "email": "hello@afkarspace.com",
+    "address": "Hyde Park, New Cairo, Cairo, Egypt",
+    "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6912.177829834518!2d31.546178398604084!3d29.976874586417388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ssa!4v1777368471692!5m2!1sen!2ssa"
+  }
+}
