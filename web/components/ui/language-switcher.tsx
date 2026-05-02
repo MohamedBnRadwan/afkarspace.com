@@ -19,7 +19,7 @@ export function LanguageSwitcher({
     <Link
       href={swapLocaleInPath(pathname, nextLocale)}
       aria-label={label}
-      className="inline-flex min-w-14 items-center justify-center rounded-full border border-line/70 bg-white/70 px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] transition hover:border-accent hover:text-accent dark:bg-slate-950/60"
+      className="inline-flex min-w-14 items-center justify-center rounded-full border border-line/70 bg-white/70 px-4 py-3 text-sm font-semibold uppercase tracking-[0.18em] transition hover:border-accent hover:text-accent dark:bg-accentSoft/60"
     >
       {nextLocale}
     </Link>

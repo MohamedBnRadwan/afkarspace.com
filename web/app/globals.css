@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --surface: 250 248 244;
+  --surface: 247 249 252;
   --foreground: 15 23 42;
-  --muted: 87 96 110;
-  --line: 219 223 230;
-  --accent: 193 154 107;
-  --accent-soft: 245 234 219;
+  --muted: 90 104 124;
+  --line: 214 222 234;
+  --accent: 37 99 235;
+  --accent-soft: 219 234 254;
 }
 
 .dark {
-  --surface: 8 12 20;
-  --foreground: 242 244 248;
-  --muted: 155 163 176;
-  --line: 44 55 72;
-  --accent: 224 188 141;
-  --accent-soft: 54 44 34;
+  --surface: 12 18 32;
+  --foreground: 241 245 249;
+  --muted: 148 163 184;
+  --line: 42 56 78;
+  --accent: 96 165 250;
+  --accent-soft: 24 38 61;
 }
 
 * {
@@ -32,7 +32,8 @@ body {
   margin: 0;
   font-family: var(--font-body-latin), var(--font-body-arabic), sans-serif;
   background:
-    radial-gradient(circle at top, rgba(193, 154, 107, 0.14), transparent 30%),
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.16), transparent 32%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1), transparent 24%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
     rgb(var(--surface));
   color: rgb(var(--foreground));
@@ -58,13 +59,31 @@ img {
 }
 
 .glass-panel {
-  @apply border border-line/70 bg-white/60 shadow-premium backdrop-blur-xl dark:bg-slate-950/45;
+  @apply border border-line/70 shadow-premium backdrop-blur-xl;
+  background-color: rgba(255, 255, 255, 0.68);
 }
 
 .eyebrow {
-  @apply inline-flex items-center gap-2 rounded-full border border-line/70 bg-white/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-muted dark:bg-slate-950/50;
+  @apply inline-flex items-center gap-2 rounded-full border border-line/70 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-muted;
+  background-color: rgba(255, 255, 255, 0.78);
 }
 
 .font-display {
   font-family: var(--font-display-latin), var(--font-display-arabic), serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.15), transparent 32%),
+    radial-gradient(circle at 80% 10%, rgba(96, 165, 250, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.015), rgba(255, 255, 255, 0)),
+    rgb(var(--surface));
+}
+
+.dark .glass-panel {
+  background-color: rgba(18, 30, 52, 0.62);
+}
+
+.dark .eyebrow {
+  background-color: rgba(19, 33, 58, 0.72);
 }

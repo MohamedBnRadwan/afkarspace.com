@@ -95,8 +95,8 @@ export function Navbar({
                             onMouseEnter={() => setActiveService(item)}
                             className={`flex items-start gap-4 rounded-3xl px-4 py-4 transition ${
                               activeService.slug === item.slug
-                                ? "bg-accentSoft text-foreground"
-                                : "hover:bg-white/70 dark:hover:bg-slate-900/80"
+                              ? "bg-accentSoft/80 text-foreground"
+                                : "hover:bg-white/70 dark:hover:bg-accentSoft/35"
                             }`}
                           >
                             <span className="mt-1 text-accent dark:text-white">
@@ -146,7 +146,7 @@ export function Navbar({
             <LanguageSwitcher locale={locale} label={dictionary.nav.language} />
             <Link
               href={localePath(locale, "/contact")}
-              className="rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-surface dark:bg-white dark:text-slate-950"
+            className="rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white shadow-glow dark:text-slate-950"
             >
               {dictionary.nav.cta}
             </Link>
@@ -229,7 +229,7 @@ export function Navbar({
                           <Link
                             key={item.slug}
                             href={localePath(locale, `/services/${item.slug}`)}
-                            className="block rounded-2xl bg-white/60 px-4 py-4 dark:bg-slate-950/40"
+                            className="block rounded-2xl bg-white/60 px-4 py-4 dark:bg-accentSoft/35"
                           >
                             <div className="font-semibold">{item.title}</div>
                             <div className="mt-1 text-sm text-muted">{item.short}</div>
@@ -253,7 +253,7 @@ export function Navbar({
                 </div>
                 <Link
                   href={localePath(locale, "/contact")}
-                  className="block rounded-full bg-foreground px-6 py-4 text-center text-base font-semibold text-surface dark:bg-white dark:text-slate-950"
+                  className="block rounded-full bg-accent px-6 py-4 text-center text-base font-semibold text-white shadow-glow dark:text-slate-950"
                 >
                   {dictionary.nav.cta}
                 </Link>

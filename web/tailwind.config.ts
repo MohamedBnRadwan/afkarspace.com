@@ -18,8 +18,8 @@ const config: Config = {
         accentSoft: "rgb(var(--accent-soft) / <alpha-value>)"
       },
       boxShadow: {
-        premium: "0 20px 60px rgba(15, 23, 42, 0.12)",
-        glow: "0 10px 30px rgba(193, 154, 107, 0.25)"
+        premium: "0 20px 60px rgba(37, 99, 235, 0.12)",
+        glow: "0 16px 40px rgba(59, 130, 246, 0.22)"
       },
       borderRadius: {
         "4xl": "2rem"

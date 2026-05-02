@@ -24,7 +24,7 @@ export function ThemeToggle({ label }: { label: string }) {
       type="button"
       aria-label={label}
       onClick={toggleTheme}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line/70 bg-white/70 text-foreground transition hover:border-accent hover:text-accent dark:bg-slate-950/60"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line/70 bg-white/70 text-foreground transition hover:border-accent hover:text-accent dark:bg-accentSoft/60"
     >
       <span className="relative block h-5 w-5">
         <span

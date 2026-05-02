@@ -11,8 +11,8 @@ export function ButtonLink({
 }) {
   const styles =
     variant === "primary"
-      ? "bg-foreground text-surface hover:opacity-90 dark:bg-white dark:text-slate-950"
-      : "border border-line/70 bg-white/60 text-foreground hover:border-accent hover:text-accent dark:bg-slate-950/40";
+      ? "bg-accent text-white shadow-glow hover:opacity-90 dark:bg-accent dark:text-slate-950"
+      : "border border-line/70 bg-white/60 text-foreground hover:border-accent hover:text-accent dark:bg-accentSoft/40";
 
   return (
     <Link
