@@ -40,7 +40,7 @@ export function Navbar({
 
   const navLinks = [
     { href: localePath(locale), label: dictionary.nav.home },
-    { href: localePath(locale, "/projects"), label: dictionary.nav.projects },
+    // { href: localePath(locale, "/projects"), label: dictionary.nav.projects },
     { href: localePath(locale, "/about"), label: dictionary.nav.about },
     { href: localePath(locale, "/contact"), label: dictionary.nav.contact }
   ];

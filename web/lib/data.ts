@@ -12,38 +12,45 @@ export type ServiceItem = {
   slug: ServiceSlug;
   icon: string;
   image: string;
+  svg: string;
 };
 
 export const services: ServiceItem[] = [
   {
     slug: "interior-design",
     icon: "/icons/interior-design.svg",
-    image: "/images/mega-menu/interior-design.svg"
+    svg: "/images/mega-menu/interior-design.svg",
+    image: "/images/services/interior-design.png"
   },
   {
     slug: "finishing",
     icon: "/icons/finishing.svg",
-    image: "/images/mega-menu/finishing.svg"
+    svg: "/images/mega-menu/finishing.svg",
+    image: "/images/services/finishing.png"
   },
   {
     slug: "factory-outfitting",
     icon: "/icons/factory.svg",
-    image: "/images/mega-menu/factory.svg"
+    svg: "/images/mega-menu/factory.svg",
+    image: "/images/services/factory.png"
   },
   {
     slug: "glass-facades",
     icon: "/icons/glass-facade.svg",
-    image: "/images/mega-menu/glass-facades.svg"
+    svg: "/images/mega-menu/glass-facades.svg",
+    image: "/images/services/glass-facades.png"
   },
   {
     slug: "furniture",
     icon: "/icons/furniture.svg",
-    image: "/images/mega-menu/furniture.svg"
+    svg: "/images/mega-menu/furniture.svg",
+    image: "/images/services/furniture.png"
   },
   {
     slug: "curtains",
     icon: "/icons/curtains.svg",
-    image: "/images/mega-menu/curtains.svg"
+    svg: "/images/mega-menu/curtains.svg",
+    image: "/images/services/curtains.png"
   }
 ];
 

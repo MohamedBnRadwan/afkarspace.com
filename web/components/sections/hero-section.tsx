@@ -17,7 +17,7 @@ export function HeroSection({
         <div className="glass-panel relative overflow-hidden rounded-[40px] p-4 sm:p-5">
           <div className="relative min-h-[620px] overflow-hidden rounded-[32px]">
             <Image
-              src="/images/hero/hero-main.svg"
+              src="/images/hero/hero-main.png"
               alt="Afkar premium interior collage"
               width={1440}
               height={1120}

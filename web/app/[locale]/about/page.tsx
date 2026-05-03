@@ -18,7 +18,7 @@ export default async function AboutPage({
       eyebrow={dictionary.nav.about}
       title={dictionary.sections.about}
       text={dictionary.sections.aboutLead}
-      image="/images/about/about-story.svg"
+      image="/images/about/about-story.jpg"
       cta={dictionary.nav.contact}
       ctaHref={localePath(locale as Locale, "/contact")}
     />
