@@ -105,49 +105,49 @@ export const conceptCompanies: Record<Locale, ConceptCompany[]> = {
       name: "CIB",
       sector: "Banking",
       projectTitle: "Executive Branch & Client Lounge Concept",
-      logo: "/logos/companies/cib.svg",
+      logo: "/logos/companies/cib.png",
       domain: "cibeg.com"
     },
     {
       name: "Orange Egypt",
       sector: "Telecommunications",
       projectTitle: "Customer Experience Hub Concept",
-      logo: "/logos/companies/orange-egypt.svg",
+      logo: "/logos/companies/orange-egypt.png",
       domain: "orange.eg"
     },
     {
       name: "Elsewedy Electric",
       sector: "Industry & Infrastructure",
       projectTitle: "Headquarters Reception & Workplace Concept",
-      logo: "/logos/companies/elsewedy-electric.svg",
+      logo: "/logos/companies/elsewedy-electric.png",
       domain: "elsewedyelectric.com"
     },
     {
       name: "Juhayna",
       sector: "FMCG & Manufacturing",
       projectTitle: "Visitor Center & Corporate Office Concept",
-      logo: "/logos/companies/juhayna.svg",
+      logo: "/logos/companies/juhayna.png",
       domain: "juhayna.com"
     },
     {
       name: "Mountain View",
       sector: "Real Estate",
       projectTitle: "Sales Gallery & Hospitality Lounge Concept",
-      logo: "/logos/companies/mountain-view.svg",
+      logo: "/logos/companies/mountain-view.png",
       domain: "mountainviewsegypt.com"
     },
     {
       name: "Hyde Park Developments",
       sector: "Real Estate",
       projectTitle: "Business District Experience Center Concept",
-      logo: "/logos/companies/hyde-park.svg",
+      logo: "/logos/companies/hyde-park.png",
       domain: "hydeparkdevelopmentsegypt.com"
     },
     {
       name: "EFG Holding",
       sector: "Financial Services",
       projectTitle: "Corporate Workplace & Meeting Suite Concept",
-      logo: "/logos/companies/efg-holding.svg",
+      logo: "/logos/companies/efg-holding.png",
       domain: "efgholding.com"
     }
   ],
@@ -156,49 +156,49 @@ export const conceptCompanies: Record<Locale, ConceptCompany[]> = {
       name: "CIB",
       sector: "القطاع المصرفي",
       projectTitle: "تصور لفرع تنفيذي وصالة عملاء",
-      logo: "/logos/companies/cib.svg",
+      logo: "/logos/companies/cib.png",
       domain: "cibeg.com"
     },
     {
       name: "Orange Egypt",
       sector: "الاتصالات",
       projectTitle: "تصور لمركز تجربة العملاء",
-      logo: "/logos/companies/orange-egypt.svg",
+      logo: "/logos/companies/orange-egypt.png",
       domain: "orange.eg"
     },
     {
       name: "Elsewedy Electric",
       sector: "الصناعة والبنية التحتية",
       projectTitle: "تصور لاستقبال المقر ومساحات العمل",
-      logo: "/logos/companies/elsewedy-electric.svg",
+      logo: "/logos/companies/elsewedy-electric.png",
       domain: "elsewedyelectric.com"
     },
     {
       name: "Juhayna",
       sector: "الأغذية والتصنيع",
       projectTitle: "تصور لمركز الزوار والمكاتب الإدارية",
-      logo: "/logos/companies/juhayna.svg",
+      logo: "/logos/companies/juhayna.png",
       domain: "juhayna.com"
     },
     {
       name: "Mountain View",
       sector: "التطوير العقاري",
       projectTitle: "تصور لصالة مبيعات ولاونج ضيافة",
-      logo: "/logos/companies/mountain-view.svg",
+      logo: "/logos/companies/mountain-view.png",
       domain: "mountainviewsegypt.com"
     },
     {
       name: "Hyde Park Developments",
       sector: "التطوير العقاري",
       projectTitle: "تصور لمركز تجربة منطقة الأعمال",
-      logo: "/logos/companies/hyde-park.svg",
+      logo: "/logos/companies/hyde-park.png",
       domain: "hydeparkdevelopmentsegypt.com"
     },
     {
       name: "EFG Holding",
       sector: "الخدمات المالية",
       projectTitle: "تصور لمساحات العمل والاجتماعات التنفيذية",
-      logo: "/logos/companies/efg-holding.svg",
+      logo: "/logos/companies/efg-holding.png",
       domain: "efgholding.com"
     }
   ]
