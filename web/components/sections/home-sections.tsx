@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Locale } from "@/lib/i18n";
-import { getLocalizedServices, processSteps, projectCards } from "@/lib/data";
+import { conceptCompanies, getLocalizedServices, processSteps, projectCards } from "@/lib/data";
 import { localePath } from "@/lib/routing";
 import { AnimatedReveal } from "@/components/ui/animated-reveal";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -44,6 +44,14 @@ export function ProjectHighlights({
   dictionary: any;
 }) {
   const cards = projectCards[locale];
+  const companies = conceptCompanies[locale];
+  const conceptsLabel = locale === "ar" ? "شركات مرجعية" : "Concept companies";
+  const conceptsTitle =
+    locale === "ar" ? "أمثلة لقطاعات وعلامات يمكن التصميم لها" : "Example brands we can design for";
+  const conceptsLead =
+    locale === "ar"
+      ? "عرض مرجعي يوضح نوع الجهات التي تناسبها خبرات أفكار. هذه أمثلة مفاهيمية وليست مطالبة بعمل منفذ ما لم يتم تأكيده."
+      : "A reference set showing the kind of organizations Afkar can shape spaces for. These are concept examples, not claimed delivered clients unless confirmed.";
 
   return (
     <section className="section-shell section-gap">
@@ -74,6 +82,44 @@ export function ProjectHighlights({
             </div>
           </AnimatedReveal>
         ))}
+      </div>
+      <div className="mt-20">
+        <AnimatedReveal>
+          <SectionHeading eyebrow={conceptsLabel} title={conceptsTitle} text={conceptsLead} />
+        </AnimatedReveal>
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {companies.map((company, index) => (
+            <AnimatedReveal key={company.name} delay={index * 0.05}>
+              <div className="glass-panel group flex h-full flex-col rounded-[30px] p-5 transition duration-500 hover:-translate-y-1 hover:shadow-premium">
+                <div className="rounded-[24px] border border-line/70 bg-white/80 p-4 shadow-premium dark:bg-accentSoft/40">
+                  <Image
+                    src={company.logo}
+                    alt={company.name}
+                    width={360}
+                    height={120}
+                    className="h-20 w-full object-contain"
+                  />
+                </div>
+                <div className="mt-5 flex items-center justify-between gap-4">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+                      {company.sector}
+                    </p>
+                    <h3 className="mt-3 text-xl font-semibold text-foreground">{company.name}</h3>
+                  </div>
+                  <div className="rounded-full border border-line/70 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-muted">
+                    {locale === "ar" ? "مرجعي" : "Concept"}
+                  </div>
+                </div>
+                <p className="mt-4 text-sm leading-7 text-muted">{company.projectTitle}</p>
+                <div className="mt-6 flex items-center justify-between border-t border-line/70 pt-4 text-sm text-muted">
+                  <span>{locale === "ar" ? "مصر" : "Egypt"}</span>
+                  <span className="font-medium text-foreground">{company.domain}</span>
+                </div>
+              </div>
+            </AnimatedReveal>
+          ))}
+        </div>
       </div>
     </section>
   );

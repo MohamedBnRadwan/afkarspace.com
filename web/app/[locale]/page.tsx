@@ -20,7 +20,7 @@ export default async function HomePage({
     <>
       <HeroSection locale={locale as Locale} dictionary={dictionary} />
       <ServicesOverview locale={locale as Locale} dictionary={dictionary} />
-      {/* <ProjectHighlights locale={locale as Locale} dictionary={dictionary} /> */}
+      <ProjectHighlights locale={locale as Locale} dictionary={dictionary} />
       <AboutHighlight locale={locale as Locale} dictionary={dictionary} />
       <ProcessSection locale={locale as Locale} dictionary={dictionary} />
       <ContactSection locale={locale as Locale} dictionary={dictionary} />

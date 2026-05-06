@@ -15,6 +15,14 @@ export type ServiceItem = {
   svg: string;
 };
 
+export type ConceptCompany = {
+  name: string;
+  sector: string;
+  projectTitle: string;
+  logo: string;
+  domain: string;
+};
+
 export const services: ServiceItem[] = [
   {
     slug: "interior-design",
@@ -90,6 +98,111 @@ export const projectCards = {
     }
   ]
 } as const;
+
+export const conceptCompanies: Record<Locale, ConceptCompany[]> = {
+  en: [
+    {
+      name: "CIB",
+      sector: "Banking",
+      projectTitle: "Executive Branch & Client Lounge Concept",
+      logo: "/logos/companies/cib.svg",
+      domain: "cibeg.com"
+    },
+    {
+      name: "Orange Egypt",
+      sector: "Telecommunications",
+      projectTitle: "Customer Experience Hub Concept",
+      logo: "/logos/companies/orange-egypt.svg",
+      domain: "orange.eg"
+    },
+    {
+      name: "Elsewedy Electric",
+      sector: "Industry & Infrastructure",
+      projectTitle: "Headquarters Reception & Workplace Concept",
+      logo: "/logos/companies/elsewedy-electric.svg",
+      domain: "elsewedyelectric.com"
+    },
+    {
+      name: "Juhayna",
+      sector: "FMCG & Manufacturing",
+      projectTitle: "Visitor Center & Corporate Office Concept",
+      logo: "/logos/companies/juhayna.svg",
+      domain: "juhayna.com"
+    },
+    {
+      name: "Mountain View",
+      sector: "Real Estate",
+      projectTitle: "Sales Gallery & Hospitality Lounge Concept",
+      logo: "/logos/companies/mountain-view.svg",
+      domain: "mountainviewsegypt.com"
+    },
+    {
+      name: "Hyde Park Developments",
+      sector: "Real Estate",
+      projectTitle: "Business District Experience Center Concept",
+      logo: "/logos/companies/hyde-park.svg",
+      domain: "hydeparkdevelopmentsegypt.com"
+    },
+    {
+      name: "EFG Holding",
+      sector: "Financial Services",
+      projectTitle: "Corporate Workplace & Meeting Suite Concept",
+      logo: "/logos/companies/efg-holding.svg",
+      domain: "efgholding.com"
+    }
+  ],
+  ar: [
+    {
+      name: "CIB",
+      sector: "القطاع المصرفي",
+      projectTitle: "تصور لفرع تنفيذي وصالة عملاء",
+      logo: "/logos/companies/cib.svg",
+      domain: "cibeg.com"
+    },
+    {
+      name: "Orange Egypt",
+      sector: "الاتصالات",
+      projectTitle: "تصور لمركز تجربة العملاء",
+      logo: "/logos/companies/orange-egypt.svg",
+      domain: "orange.eg"
+    },
+    {
+      name: "Elsewedy Electric",
+      sector: "الصناعة والبنية التحتية",
+      projectTitle: "تصور لاستقبال المقر ومساحات العمل",
+      logo: "/logos/companies/elsewedy-electric.svg",
+      domain: "elsewedyelectric.com"
+    },
+    {
+      name: "Juhayna",
+      sector: "الأغذية والتصنيع",
+      projectTitle: "تصور لمركز الزوار والمكاتب الإدارية",
+      logo: "/logos/companies/juhayna.svg",
+      domain: "juhayna.com"
+    },
+    {
+      name: "Mountain View",
+      sector: "التطوير العقاري",
+      projectTitle: "تصور لصالة مبيعات ولاونج ضيافة",
+      logo: "/logos/companies/mountain-view.svg",
+      domain: "mountainviewsegypt.com"
+    },
+    {
+      name: "Hyde Park Developments",
+      sector: "التطوير العقاري",
+      projectTitle: "تصور لمركز تجربة منطقة الأعمال",
+      logo: "/logos/companies/hyde-park.svg",
+      domain: "hydeparkdevelopmentsegypt.com"
+    },
+    {
+      name: "EFG Holding",
+      sector: "الخدمات المالية",
+      projectTitle: "تصور لمساحات العمل والاجتماعات التنفيذية",
+      logo: "/logos/companies/efg-holding.svg",
+      domain: "efgholding.com"
+    }
+  ]
+};
 
 export const processSteps = {
   en: [
